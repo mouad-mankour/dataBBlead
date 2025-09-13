@@ -1,3 +1,5 @@
+import logo from "@/assets/logo.jpeg";
+
 export function Footer() {
   return (
     <footer className="py-12 border-t border-border/30 relative">
@@ -6,6 +8,21 @@ export function Footer() {
       
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center space-y-6">
+          {/* Logo et branding */}
+          <div className="flex flex-col items-center space-y-4">
+            <div className="flex items-center space-x-3">
+              <img 
+                src={logo} 
+                alt="SEV Digital" 
+                className="h-10 w-10 rounded-lg shadow-md"
+              />
+              <div>
+                <h3 className="text-lg font-bold text-foreground">SEV Digital</h3>
+                <p className="text-sm text-muted-foreground">Data Intelligence</p>
+              </div>
+            </div>
+          </div>
+
           {/* Message poétique */}
           <div>
             <p className="text-muted-foreground italic text-lg">
